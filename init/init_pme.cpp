@@ -79,8 +79,8 @@ void vendor_load_properties()
     if (HAS_SUBSTRING(bootmid, "2PS620000")) {
         /* Common props for HTC 10 (International) */
         gsm_properties("9");
-        property_set("ro.build.fingerprint", "htc/pmeuhl_00401/htc_pmeuhl:6.0.1/MMB29M/738269.1:user/release-keys");
-        property_set("ro.build.description", "1.30.401.1 8.0_g CL738269 release-keys");
+        property_set("ro.build.fingerprint", "htc/pmeuhl_00617/htc_pmeuhl:7.0/NRD90M/831921.8:user/release-keys");
+        property_set("ro.build.description", "2.28.401.8 8.0_g CL831921 release-keys");
         property_set("ro.product.device", "htc_pmeuhl");
         property_set("ro.build.product", "htc_pmeuhl");
         if (HAS_SUBSTRING(bootcid, "HTC__001")) {
