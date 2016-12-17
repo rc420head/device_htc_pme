@@ -53,7 +53,7 @@ $(KEYMASTER_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Keymaster firmware link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /etc/firmware/$(notdir $@) $@
+	$(hide) ln -sf /system/etc/firmware/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(KEYMASTER_SYMLINKS)
 
