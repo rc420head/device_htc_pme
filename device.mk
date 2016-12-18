@@ -224,6 +224,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    libshim_power \
     power.msm8996 \
     thermal.msm8996
 
