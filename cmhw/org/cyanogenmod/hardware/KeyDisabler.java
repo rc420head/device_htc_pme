@@ -32,9 +32,7 @@ public class KeyDisabler {
     private static String CONTROL_PATH =
         "/sys/devices/soc/757a000.i2c/i2c-6/6-0064/disable_key";
 
-    public static boolean isSupported() {
-        return new File(CONTROL_PATH).exists();
-    }
+    public static boolean isSupported() {return true; }
 
     public static boolean isActive() {
         return FileUtils.readOneLine(CONTROL_PATH).equals("1");
