@@ -99,15 +99,6 @@
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
-    <!-- Do not translate. Defines the shutdown actions passed to the kernel.
-         The first item should be empty for regular reboot. -->
-    <string-array name="shutdown_reboot_actions" translatable="false">
-        <item></item>
-        <item>soft_reboot</item>
-        <item>recovery</item>
-        <item>download</item>
-    </string-array>
-
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
