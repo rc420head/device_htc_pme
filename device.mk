@@ -109,6 +109,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
 
+# texting
+PRODUCT_PACKAGES += \
+    messaging
+
 # Camera
 PRODUCT_PACKAGES += \
     libshim_camera
@@ -139,12 +143,8 @@ PRODUCT_PACKAGES += \
     fingerprintd
 
 # FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
-
-# Gesture Handler
-PRODUCT_PACKAGES += \
-    GestureHandler
+# PRODUCT_PACKAGES += \
+#    FlipFlap
 
 # GPS
 PRODUCT_PACKAGES += \
