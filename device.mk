@@ -276,19 +276,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfcscc_access.xml:system/etc/nfcscc_access.xml \
     $(LOCAL_PATH)/configs/nfcse_access.xml:system/etc/nfcse_access.xml
 
-# OMX
-PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libextmedia_jni \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw
-
 # Power
 PRODUCT_PACKAGES += \
     libshim_power \
