@@ -89,7 +89,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8996 \
     audio.r_submix.default \
     audio.usb.default \
-    audio_amplifier.msm8996 \
+   # audio_amplifier.msm8996 \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -175,10 +175,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8996 \
-    android.hardware.gnss@1.0-impl \
-    libcurl \
-    libgnsspps
+    android.hardware.gnss@1.0-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
