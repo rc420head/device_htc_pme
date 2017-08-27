@@ -135,8 +135,9 @@ PRODUCT_PACKAGES += \
     memtrack.msm8996 \
     libjni_livedisplay \
     liboverlay \
-    libtinyxml \
-    DeviceHandler
+    libtinyxml
+    # \
+    # DeviceHandler
 
 # Fingerprint
 PRODUCT_PACKAGES += \
