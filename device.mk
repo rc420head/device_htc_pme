@@ -216,9 +216,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/cypress-cap-sensor.kl:system/usr/keylayout/cypress-cap-sensor.kl
 
 # IPACM
-PRODUCT_PACKAGES += \
-    IPACM_cfg.xml \
-    ipacm
+# PRODUCT_PACKAGES += \
+#      IPACM_cfg.xml \
+#      ipacm
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -331,7 +331,6 @@ PRODUCT_PACKAGES += \
     wlutil \
     wpa_supplicant \
     wpa_supplicant.conf
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calibration:system/etc/calibration \
     $(LOCAL_PATH)/configs/hostapd.accept:system/etc/hostapd/hostapd.accept \
