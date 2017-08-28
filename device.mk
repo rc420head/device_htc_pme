@@ -36,8 +36,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -157,12 +155,12 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
 #    android.hardware.drm@1.0-impl
 
-PRODUCT_PACKAGES += \
-    FlipFlap
+# PRODUCT_PACKAGES += \
+#    FlipFlap
 
 # Gesture Handler
-PRODUCT_PACKAGES += \
-    GestureHandler
+# PRODUCT_PACKAGES += \
+#     GestureHandler
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -350,5 +348,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 # KeyHandler
-PRODUCT_PACKAGES += \
-    com.cyanogenmod.keyhandler
+# PRODUCT_PACKAGES += \
+#   com.cyanogenmod.keyhandler

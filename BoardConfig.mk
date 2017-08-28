@@ -159,9 +159,10 @@ TARGET_INIT_VENDOR_LIB := libinit_pme
 TARGET_RECOVERY_DEVICE_MODULES := libinit_pme
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
-TARGET_FS_CONFIG_GEN += $(PLATFORM_PATH)/config.fs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+    $(LOCAL_PATH)/compatibility_matrix.xml:system/vendor/compatibility_matrix.xm
+    $(LOCAL_PATH)/config.fs:system/vendor/config.fs
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
