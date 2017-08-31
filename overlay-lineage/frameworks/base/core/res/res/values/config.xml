@@ -74,4 +74,30 @@
     <!-- Enable blur support -->
     <bool name="config_uiBlurEnabled">true</bool>
 
+ <!-- Defines the shutdown options shown in the reboot dialog. -->
+        <array name="shutdown_reboot_options" translatable="false">
+        <item>@string/reboot_reboot</item>
+        <item>@string/reboot_soft</item>
+        <item>@string/reboot_recovery</item>
+        <item>@string/reboot_download</item>
+    </array>
+
+    <!-- Do not translate. Defines the shutdown actions passed to the kernel.
+         The first item should be empty for regular reboot. -->
+    <string-array name="shutdown_reboot_actions" translatable="false">
+        <item></item>
+        <item>soft_reboot</item>
+        <item>recovery</item>
+        <item>download</item>
+    </string-array>
+
+    <!-- Allow user to adjust button brightness from settings -->
+    <integer name="config_buttonBrightnessSettingDefault">110</integer>
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
+    <!-- Whether notify fingerprint client of successful cancelled authentication -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
 </resources>

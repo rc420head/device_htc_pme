@@ -3,6 +3,7 @@
     "repository": "android_kernel_htc_msm8996",
     "target_path": "kernel/htc/msm8996"
   },
+<<<<<<< HEAD:lineage.dependencies
  {
    "repository": "android_device_qcom_common",
    "target_path": "device/qcom/common"
@@ -26,5 +27,10 @@
   {
     "repository": "android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings"
+=======
+  {
+    "repository": "android_device_qcom_common",
+    "target_path": "device/qcom/common"
+>>>>>>> parent of fc2871d... pme: make NFC not crash continuously:cm.dependencies
   }
 ]
